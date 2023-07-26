@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+}
+
+article {
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid;
+    background-color: #fff;
+    color: #333;
+}
+
+.grid-ctn {
+    /* attention à l'unité viewport */
+    /* ici vh -> viewheight correspond à 100% de la surface du support */
+    /* height: 100vh; */
+    /* width: 800px; */
+    display: grid;
+    /* colonnes */
+    /* grid-template-columns: 200px 150px 250px; */
+    /* 3 valeurs 1fr 2fr 1fr -> donc 3 colonnes de créés */
+    grid-template-columns: 1fr 2fr 20%;
+    /* lignes */
+    /* 5 valeurs donc 5 lignes */
+    grid-template-rows: 120px 1fr 1fr 90px 120px;
+    /* juste faire attention au unités sur les valeurs absolue(px), ou relative (em, rem, %) peuvent impacter la surface de la grille dans sa globalité */
+    /* une valeur "auto" peut être utilisé
+    auto va occuper le minimum de place possible pour ce conteneur mais avec des éléments adjacent avec comme valeurs des unités absolues se verra attribuer l'espace restants */
+    /* comme en flex, on peut ajouter une "gouttière" entre les conteneurs */
+    gap: 20px;
+}
+
+.item-4 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+
+
+.item-9 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.item-10 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.item {
+    background-color: blue;
+    border: 1px solid #fff;
+    padding: 10px;
+    color: #fff;
+}
+
+.item-8 {
+    background-color: #333;
+    border: 0;
+}

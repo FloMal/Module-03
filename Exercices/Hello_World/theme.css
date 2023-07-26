@@ -1,0 +1,334 @@
+/*    *****    reset    *****    */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+/*    *****    Global Aspect   *****    */
+
+body {
+    font-family: "Lato";
+    color: #333;
+    line-height: 1.6em;
+}
+
+header,
+footer,
+h1,
+a {
+    margin: auto;
+    text-align: center;
+}
+h1,
+h2,
+h3 {
+    line-height: 1.5em;
+    font-weight: normal;
+    text-align: center;
+}
+h1 {
+    font-size: 3rem;
+    color: #40CCEA;
+    word-spacing: 10px;
+    border-bottom: 1px dotted #40CCEA;
+    margin-bottom: 1rem;
+    width: 90%;
+}
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+.container {
+    padding: 1em;
+}
+p {
+    margin: 1em 0;
+}
+
+/*    *****    Header    *****    */
+
+nav {
+    background-color: #40CCEA;
+    padding: 0.5em;
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em;
+    border-radius: 6px;
+    display: block;
+    flex-basis: 100%;
+    border: 1px solid white;
+    margin: 5px;
+}
+
+
+/*    *****    Main    *****    */
+
+section {
+    margin: 30px 0;
+}
+article {
+    margin-bottom: 25px;
+}
+hr {
+    border: 1px solid black;
+    margin-top: 35px;
+}
+ul {
+    margin-bottom: 1em;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #0096D0;
+}
+.readmore {
+    background-color: #0096D0;
+    color: white;
+    border-radius: 6px;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.red {
+    color: #F00;
+}
+.ochre {
+    color: #CD8C56;
+}
+
+address p {
+    margin: 0;
+}
+
+/*    *****    Footer    *****    */
+
+footer {
+    background-color: #40CCEA;
+    color: white;
+    padding: 1.5em;
+}
+footer img {
+    width: 60px;
+}
+footer a {
+    color: white;
+}
+
+
+/*    *****    Image    *****    */
+
+.img {
+    width: 100%;
+    height: auto;
+}
+
+aside {
+    font-size: 2em;
+    margin: 1em 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.facebook {
+    color: #4267B2;
+}
+.twitter {
+    color: #1da1f2;
+}
+.pinterest {
+    color: #bd081c;
+}
+.instagram {
+    color: #8948C1;
+}
+
+/*    *****    Table    *****    */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th,
+td {
+    border: 1px solid #DDD;
+    padding: 1em 1% 1em;
+}
+tbody tr:nth-child(odd) {
+  background-color: #EEE;
+}
+
+
+/*    *****    Background    *****    */
+
+.bkgImg {
+    background-image: url("./instructions/ressources/fond.jpg");
+    background-position: center;
+    padding: 2em;
+    background-size: cover;
+}
+.bkgWhite {
+    background-color: #fff;
+    width: 100%;
+    padding: 2em 1em;
+    opacity: 0.85;
+}
+
+
+/*    *****    Form    *****    */
+
+fieldset {
+    background-image: url("./instructions/ressources/map-image.png");
+    background-color: #444;
+    width: 100%;
+    padding: 1em 0 2em;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+input,
+textarea {
+    border-radius: 5px;
+    margin: 0.5em 0;
+    padding: 1em 0.5em;
+    width: 90%;
+}
+
+textarea {
+    margin-top: 1.5em;
+    height: 100px;
+}
+
+.button {
+    background-color: #0096D0;
+    color: white;
+    border-radius: 6px;
+    padding: 1em;
+    cursor: pointer;
+    margin-top: 1.5em;
+}
+
+
+
+
+
+
+@media screen and (min-width: 500px) {
+    .img {
+        width: unset;
+        height: unset;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width: 780px) {
+    
+/*    *****    Global Aspect    *****    */
+
+    h2,
+    h3 {
+        text-align: left;
+    }
+
+/*    *****    Header   *****    */
+    nav {
+        padding: 0.5em;
+        margin-bottom: 1.5em;
+        display: flex;
+        justify-content: space-around;
+    }
+    nav a {
+        padding: 1em;
+        border-radius: 6px;
+        display: block;
+        flex-basis: 20%;
+        border: 1px solid white;
+        margin: 5px;
+    }
+
+    /*    *****    Last trip   *****    */
+
+    .flexCtn{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .flexCtn p:first-child {
+        margin-top: 0;
+    }
+
+    .img {
+        height: auto;
+        max-width: 49%;
+    }
+
+    .vienne {
+        margin: 0;
+    }
+
+    .marrakech {
+        margin: 0;
+        order: 1;
+    }  
+
+    .txt {
+        max-width: 50%;
+    }
+
+    .readmore {
+        width: 50%;
+        margin-top: 2em;
+        max-height: 300px;
+    }
+
+    /*    *****    Form   *****    */
+
+    .form {
+        margin: 1em;
+    }
+
+    input[type="text"],
+    input[type="tel"] {
+        width: 40%;
+        order: -1;
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    .container,
+    .form {
+        
+    }
+}
+    
+@media screen and (min-width: 1200px) {
+    
+}

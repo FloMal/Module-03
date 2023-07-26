@@ -1,0 +1,326 @@
+/* ***    Reset    *** */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+
+
+
+/* ***    Global Aspect    *** */
+
+
+body {
+    font-family: "Source Sans 3", "Sans Serif";
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+main > main {
+    width: 90%;
+    margin: auto;
+}
+
+h1,
+h2,
+h3,
+nav,
+blockquote,
+footer p {
+    font-family: "Mali", "Handwriting";
+}
+
+h1 {
+    font-size: 3rem;
+    background-color: white;
+    color: #db0059;
+    padding: 2.5rem 2rem;
+    margin: auto;
+    width: fit-content;
+    opacity: 0.85;
+}
+h2 {
+    font-size: 2.8rem;
+    margin-bottom: 2.8rem;
+}
+h3 {
+    font-size: 2rem;
+    text-align: left;
+}
+
+nav {
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+}
+
+blockquote {
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: bold;
+    background-color: #ededed;
+    border: 0 solid #037d9d;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    padding: 2.5rem 2rem;
+    margin: 5rem auto;
+    width: 75%;
+}
+blockquote p {
+    text-align: center;
+}
+cite {
+    font-size: 2rem;
+    font-style: normal;
+    font-family: "Source Sans 3", "Sans Serif";
+}
+
+time {
+    font-size: 1.4rem;
+    display: block;
+    text-align: left; 
+    margin: 1rem 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    text-align: left;
+}
+
+
+
+
+
+/* ***    Header    *** */
+
+
+nav a {
+    color: black;
+    font-weight: bold;
+    padding: 1.5rem 2rem;
+    margin: auto;
+    width: fit-content;
+    display: block;
+}
+
+.onIt,
+nav a:hover {
+    background-color: #ededed;
+    border: 0 solid #037d9d;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+}
+
+
+
+
+
+/* ***    Main - Header    *** */
+
+
+main > header {
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10rem 0;
+    margin: 3rem 0;
+}
+.banner1 {
+    background-image: url(./instructions/images/banner1.jpg);  
+}
+
+.banner2 {
+    background-image: url(./instructions/images/banner2.jpg);
+}
+
+
+
+
+
+/* ***    Main - Main    *** */
+
+
+section {
+    margin-bottom: 6rem;
+}
+
+
+
+main i {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+.fa-calendar-days,
+.blue {
+    color: #037d9d;
+}
+.fa-microphone,
+.fa-comments,
+.pink {
+    color: #db0059;
+}
+
+
+
+article {
+    background-color: #ededed;
+    padding: 3rem 3%;
+    margin-bottom: 3rem;
+}
+article img {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+article p {
+    margin-bottom: 1rem;
+}
+
+
+
+.readMore {
+    color: #ededed;
+    background-color: #1d1e3d;
+    padding: 1rem 2rem;
+    display: block;
+    width: 30%;
+    margin-right: 0;
+    margin-left: auto;
+}
+.readMore:hover {
+    color: #1d1e3d;
+    background-color: #ededed;
+    border: 1px solid #1d1e3d;
+}
+
+
+
+li {
+    list-style:none;
+    margin: 1rem 0;
+    text-align: left;
+}
+.comments li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.comments li:before {
+    content: "«";
+    padding: 1rem;
+    color: #db0059;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+li i {
+    font-size: 2rem;
+    margin: 0 2rem 0 0;
+    color: #037d9d;
+}
+
+
+
+
+
+/* ***    Main - Gallery    *** */
+
+
+.gallery {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    display: grid;
+    gap: 1rem;
+}
+.gallery img {
+    width: 100%;
+}
+
+
+
+
+
+/* ***    Footer    *** */
+
+
+footer {
+    background-color: #db0059;
+    color: white;
+    padding: 5rem 5%;
+}
+footer p {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+
+form {
+    border: 0 solid white;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    padding: 2rem 5%;
+    margin-bottom: 4rem;
+}
+label {
+    display: block;
+    text-align: left;
+}
+input {
+    color: #db0059;
+    display: block;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-weight: bold;
+}
+[type="email"] {
+    opacity: 0.70;
+    width: 80%;
+}
+[type="submit"]:hover {
+    color: white;
+    background-color: #db0059;
+    border: 1px solid white;
+}
+::placeholder {
+    color: #db0059;
+    font-weight: normal;
+}
+
+
+
+footer i {
+    color: white;
+    font-size: 2.5rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+footer i:hover {
+    color: #db0059;
+    background-color: white;
+    border: 1px solid #db0059;
+}
+
+
+
+
+
+@media screen and (width > 780px) {
+
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+}

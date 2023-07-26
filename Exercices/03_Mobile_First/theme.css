@@ -1,0 +1,35 @@
+.container {
+    padding: 0;
+    min-width: 100%;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    flex-basis: 100%;
+    padding: 2em;
+}
+
+.greyBkd {
+    text-transform: uppercase;
+    background-color: #bbb;
+    color:black;
+    margin: 0;
+    padding: 1em;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 780px) {
+    article {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    article {
+        flex-basis: 100%;
+    }
+}

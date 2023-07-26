@@ -1,0 +1,32 @@
+/* DESKTOP-FIRST */
+/* on s'occupe de faire le design pour le support d'écran de bureau (supérieur à 1200px) */
+body {
+    background-color: red;
+    color: purple;
+}
+
+
+/* ENSUITE
+on fait celui des support pc portable  -> tablettes -> mobile(smartphone)  */
+
+/* PC PORTABLE (laptop) */
+@media screen and (max-width: 1200px){
+    body {
+        background-color: green;
+    }
+}
+
+/* TABLETTE (TABLET) */
+@media screen and (max-width: 780px){
+    body {
+        background-color: yellow;
+        color: hotpink;
+    }
+}
+
+/* SMARTPHONE */
+@media screen and (max-width: 400px){
+    body {
+        background-color: royalblue;
+    }
+}

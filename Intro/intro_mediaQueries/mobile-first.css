@@ -1,0 +1,32 @@
+/* MOBILE-FIRST */
+/* on s'occupe de faire le design pour le support d'écran de smartphone (inférieur à 425px) */
+body {
+    background-color: red;
+    color: #fff;
+}
+
+
+/* ENSUITE
+on fait celui des support tablette -> pc portable -> desktop  */
+
+/* TABLETTE (TABLET)  */
+@media screen and (min-width: 425px){
+    body {
+        background-color: green;
+    }
+}
+
+/* PC PORTABLE (LAPTOP) */
+@media screen and (min-width: 780px){
+    body {
+        background-color: yellow;
+        color: hotpink;
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1200px){
+    body {
+        background-color: royalblue;
+    }
+}

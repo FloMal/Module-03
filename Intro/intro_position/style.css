@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: brown;
+    position: absolute;
+    width: 500px;
+    /* margin: 50px auto; */
+    border: 1px dashed red;
+}
+
+.item {
+    border: 1px dashed darkblue;
+    width: 100px;
+    height: 100px;
+}
+
+.item-1 {
+    background-color: red;
+}
+
+.item-2 {
+    background-color: yellow;
+    /* par défaut, tout les éléments html sont en position static !! */
+    position: relative;
+    top: 25px;
+    left: 50px;
+    z-index: 999;
+}
+
+.item-3 {
+    position: relative;
+    background-color: green;
+    /* on peut  */
+    z-index: 9999;
+}
+
+.item-4 {
+    background-color: purple;
+    /* position : absolute -> va se référer à son plus proche parent positionné (relatif ou absolu) si il n'y en a pas, il remonte jusqu'au body */
+    position: absolute;
+    top: 65px;
+    left: 10px;
+    z-index: 9999;
+}
+
+/* cet élément sera caché par le main */
+p {
+    cursor: pointer;
+}
